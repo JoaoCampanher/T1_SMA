@@ -13,6 +13,9 @@ try {
   for (const queueId of environment.listQueues()) {
     const queue: Queue = environment.getQueue(queueId)!;
     console.log(`Queue:   ${queue.getId()} (Servers: ${queue.servers})`);
+    if (queue.minArrival !== -1 && queue.maxArrival !== -1) {
+      console.log(`Arrving Time: ${queue.minArrival} - ${queue.maxArrival}`);
+    }
     console.log(`Service Time: ${queue.minDeparture} - ${queue.maxDeparture}`);
     console.log("------------------------------------------------------");
     console.log("     State   |        Time        |    Probability    ");
