@@ -6,8 +6,9 @@
 Para rodar o projeto, é necessário ter Node instalado. O arquivo de entrada deve se chamar model.json e estar na pasta raiz do projeto.
 
 Para rodar o projeto, basta utilizar o comando:
+```
 npm run start
-
+```
 O comando deve baixar as dependências e logo depois executar o projeto.
 ***
 
