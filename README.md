@@ -16,7 +16,7 @@ O arquivo de definição deve ser um arquivo JSON com a seguinte estrutura:
 initialArrivals: tempo de chegada inicial de cada fila.
 O objeto queues define as filas, com os seguintes atributos:
 - servers: número de servidores da fila
-- capacity: capacidade da fila. Usamos 999999999 para representar infinito.
+- capacity: capacidade da fila. Omita o atributo para capacidade infinita.
 - minArrival: tempo mínimo de chegada
 - maxArrival: tempo máximo de chegada
 - minService: tempo mínimo de serviço
@@ -36,7 +36,6 @@ passagens: lista de passagens de clientes entre filas, com os seguintes atributo
     "queues": {
         "Q1": {
             "servers": 1,
-            "capacity": -1,
             "minArrival": 2.0,
             "maxArrival": 4.0,
             "minService": 1.0,

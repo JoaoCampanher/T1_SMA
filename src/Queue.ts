@@ -4,7 +4,7 @@ export default class Queue {
   private id: string;
   public environment: QueueEnvironment;
   public population: number = 0;
-  public maxPopulation: number = -1;
+  public maxPopulation: number = Number.MAX_SAFE_INTEGER;
   public servers: number = -1;
   public minArrival: number = -1.0;
   public maxArrival: number = -1.0;
