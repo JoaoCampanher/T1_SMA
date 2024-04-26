@@ -1,0 +1,15 @@
+{
+  "name": "t1_sma",
+  "version": "1.0.0",
+  "main": "Simulator.ts",
+  "scripts": {
+    "start": "npm i & npm i -g typescript & npm i -g ts-node & ts-node \"src\\Simulator.ts\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ts": "^0.2.2"
+  }
+}
